@@ -1,6 +1,6 @@
 /*----google_fonts-----*/
 
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap');
 /*----variables_css-----*/
 :root{
   --header-height: 3rem;
@@ -111,7 +111,7 @@ img{
   margin-bottom: .75rem auto 2rem;
 }
 
-.section__titile-1 span,.section__title-2 span{
+.section__title-1 span,.section__title-2 span{
   z-index: 5;
   position: relative;
 }
@@ -141,7 +141,7 @@ img{
 .geometrick-box::after{
   content:"";
   position:absolute;
-  width: 16px'
+  width: 16px;
   height: 16px;
   border: 3px solid var(--black-color);
   left: -5px;
@@ -158,10 +158,11 @@ img{
 .header{
   position:fixed;
   top:0;
+  left:0;
   width:100%;
   background-color:var(--body-color);
   z-index:var(--z-fixed);
-  transition: .4s;
+  transition: box-shadow .4s;
 }
 .nav{
   position: relative;
@@ -171,13 +172,13 @@ img{
   align-items: center;
 }
 .nav__logo{
-  displaly: flex;
+  display: flex;
   column-gap: .5rem;
   align-items: center;
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
-.nav__logo-circle,.nav__toogle{
+.nav__logo-circle,.nav__toggle{
   width:32px;
   height:32px;
   background-color: var(--black-color);
@@ -187,7 +188,7 @@ img{
 .nav__logo-circle{
   border-radius: 50%;
 }
-.nav__toogle{
+.nav__toggle{
   cursor: pointer;
   font-size: 1.25rem;
 }
@@ -200,11 +201,12 @@ img{
     top: -100%;
     left: 0;
     background-color: hsla(0,0%,0%,.75);
-    padding-block: 1.5 rem 5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 5rem;
     width: 100%;
     text-align: center;
     backdrop-filter: blur(8px);
-    transition: top .4;
+    transition: top .4s;
   }
 }
 
@@ -213,6 +215,7 @@ img{
 }
 
 .nav__title{
+  display: block;
   font-size: var(--smaller-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 3.5rem;
@@ -230,7 +233,6 @@ img{
   width: 40px;
   height: 1px;
   background-color: var(--text-color-light);
-  position:absolute;
   top:50%;
   left: -4rem;
 }
@@ -250,16 +252,17 @@ img{
   color: var(--text-color-light);
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
-  transition: color .3s
+  transition: color .3s;
 }
 .nav__link::after{
   content:'';
+  width: 0;
   height: 2px;
   background-color: var(--white-color);
   position: absolute;
   left: 0px;
   bottom: -.5rem;
-  transition: left .3s;
+  transition: width .3s;
 }
 .nav__link:hover{
   color: var( --white-color);
@@ -274,6 +277,9 @@ img{
   top: 1rem;
   right: 1.5rem;
   cursor: pointer;
+}
+.show-menu{
+  top: 0px;
 }
 /*-----SHOW MENU-----*/
 
