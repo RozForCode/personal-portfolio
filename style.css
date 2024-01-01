@@ -65,7 +65,9 @@ body{
   background-color: var(--body-color);
   color: var(--text-color);
 }
-
+img{
+  mix-blend-mode:multiply;
+}
 h1,h2,h3,h4{
   color: var(--title-color);
   font-weight: var(--font-bold);
@@ -130,12 +132,13 @@ img{
   bottom: -4px;
 }
 
-.geometrick-box {
+.geometric-box {
   position: absolute;
   width: 20px;
   height: 20px;
   background-color: var( --first-color);
   rotate: -30deg;
+  border: dashed black;
 }
 
 .geometrick-box::after{
@@ -304,10 +307,11 @@ img{
   width: 220px;
 }
 .home__img{
-  position: relative;
-  z-index: 10;
+  /* position: relative;
+  z-index: 10; */
+  width: 100%;
 }
-.home_shadow{
+.home__shadow{
   width:100%;
   height:100%;
   background-color: var(--container-color);
