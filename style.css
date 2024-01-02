@@ -104,13 +104,18 @@ img{
 .section{
   padding-block: 4rem 2rem;
 }
-
-.section__title-1,
-.section__title-2{
+#section-text{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.section__title1,
+.section__title2{
   position:relative;
   font-size: var(--h1-font-size);
   width: max-content;
-  margin-bottom: .75rem auto 2rem;
+  margin-bottom: 2rem;
+  margin-top: .75rem;
 }
 
 .section__title-1 span,.section__title-2 span{
@@ -289,6 +294,9 @@ img{
 }
 
 /* add shodow header */
+.shadow-Header{
+  box-shadow: 0 1px 16px hsla(0,0%,0%,.32);;
+}
 /* active link */
 
 /*----HOME-----*/
@@ -398,7 +406,23 @@ home__scroll i{
   animation: scroll-down 3s infinite;
 }
 /* Animate scroll icon */
-@keyframes 
+@keyframes scroll-down{
+  0%{
+    transform: translateY(-1rem);
+    opacity:0;
+  }
+  50%{
+    transform: translateY(0);
+    opacity:1;
+  }
+  100%{
+    transform: translateY(0.6rem);
+    opacity:0;
+  }
+}
+.home__scroll-box i{
+  animation: scroll-down 1s infinite;
+}
 
 /*=============== BUTTON ===============*/
 
