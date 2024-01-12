@@ -727,18 +727,20 @@ projects__link:hover i{
 }
 .contact__form,.contact__group{
   display:grid;
-  padding-right:3rem;
+  padding-right:4rem;
+  padding-left:4rem;
   row-gap:1.25rem;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .contact__form{
-  position:relatve;
+  position:relative;
 }
 .contact__box{
   position:relative;
-  width:100%;
+  /* width:100%; */
   height:58px;
+  width:100%;
 }
 
 .contact__input,.contact__button{
@@ -746,6 +748,7 @@ projects__link:hover i{
   font-size: var(--normal-font-size);
   outline:none;
   border:none;
+  color:var(--text-color-light);
 }
 
 .contact__input{
@@ -753,23 +756,82 @@ projects__link:hover i{
   width:100%;
   height:100%;
   background-color:var(--black-color);
-  border: 3px solid var(--black-color-light)
+  border: 3px solid var(--black-color-light);
+  padding: .5rem 1rem;
+  font-weight: var(--font-medium);
+  transition: border .4s, background-color .4s;
 }
-/* .section__title-3{
-  
+.contact__input::placeholder{
+  /* color: var(--text-color-light); */
+  transition: opacity .4s;
 }
-.section__title-3::after{
-  content: '';
+.contact__input:focus{
+  border: 3px solid var(--white-color);
+}
+.contact__input:-webkit-autofill{
+  transition: background-color 6000s, color 6000s;
+}
+.contact__label{
+  position:absolute;
+  top:8px;
+  left:10px;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  padding:8px;
+  pointer-events: none;
+  opacity:0;
+}
+
+/* SOCIAL CONTACT */
+.contact__social{
+  display:grid;
+  row-gap: 1rem;
+  background-color: hsl(0, 0%, 10%);
+  padding-block: 1rem 2rem;
+  text-align: center;
+}
+.contact__social-arrow{
+  width:32px;
+  margin: 0 auto;
+  transform: rotate(-90deg);
+  /* filter: invert(100%) */
+}
+.contact__social-data{
+  display:flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.contact__social-description-1{
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  margin-bottom: .5rem;
+}
+.contact__social-description-2{
+  color: var(--white-color);
+  font-size: var(--font-medium);
+  font-weight: var(--font-semi-bold);
+}
+.contact__social-links{
+  display:flex;
+  justify-content:center;
+  column-gap: .75rem;
+}
+.contact__social-link{
+  background-color: var(--black-color-light);
+  padding:6px;
+  color:var(--white-color);
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+}
+.contact__social-link:hover{
+  background-color: var(--first-color);
+}
+.contact__message{
+  color:var(--white-color);
   position: absolute;
-  width: 40px;
-  height: 28px;
-  background-color: hsla(14,98%,50%, .2);
-  top: 0;
-  right: 0;
-} */
-/* Opaque placeholder */
-
-
-/* Move label up & sticky label */
-
+  left: 0;
+  bottom:-1.6rem;
+  font-size: var(--small-font-size);
+}
 /*----animate scroll icon---*/
