@@ -47,14 +47,21 @@ const sendEmail = (e) =>{
     setTimeout( () =>{
       contactMessage.textContent = ""
     },5000);
-  }
+  })
 }
 contactForm.addEventListener('submit', sendEmail);
 
 
 /*------SHOW SCROOL UP------*/
 
+const scrollUp = () => {
+  const scrollUpButton = document.getElementById("scroll-up");
+  window.scrollY >=350 ? scrollUpButton.classList.add('show-scroll') : scrollUpButton.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollUp);
+
 /*------SCROOL SETTINGS ACTIVE LINK------*/
+
 
 /*------DARK LIGHT THEME------*/
 
