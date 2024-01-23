@@ -330,6 +330,18 @@ img {
 }
 
 /* active link */
+.active-link{
+  color: var(--white-color)
+}
+.active-link::after{
+  width:25%;
+}
+/* .nav__menu a.active-link{
+  
+} */
+
+
+
 
 /*----HOME-----*/
 .home__container {
