@@ -83,27 +83,30 @@ window.addEventListener('scroll', scrollActice);
 
 /*------DARK LIGHT THEME------*/
 
-const themeButton = document.getElementById('theme-button');
-const darkTheme = 'dark-theme';
-const iconTheme = 'ri-sun-line';
+// const themeButton = document.getElementById('theme-button');
+// const darkTheme = 'dark-theme';
+// const iconTheme = 'ri-sun-line';
 
-const selectedTheme = localStorage.getItem('selected-theme');
-const selectedIcon = localStorage.getItem('selected-icon');
+// const selectedTheme = localStorage.getItem('selected-theme');
+// const selectedIcon = localStorage.getItem('selected-icon');
 
-const currentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-const currentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-clear-line' : 'ri-sun-line';
+// const currentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+// const currentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-clear-line' : 'ri-sun-line';
 
-if(selectedTheme){
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-  themeButton.classList[selectedIcon === 'ri-moon-clear-line' ? 'add' : 'remove'](iconTheme);
+// if(selectedTheme){
+//   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+//   themeButton.classList[selectedIcon === 'ri-moon-clear-line' ? 'add' : 'remove'](iconTheme);
+// }
+// themeButton.addEventListener('click', () =>{
+//   // add or remove the theme
+//   document.body.classList.toggle(darkTheme);
+//   document.body.classList.toggle(iconTheme);
+//   // we also save the theme and the current icon that the user chose
+//   localStorage.setItem('selected-theme', currentTheme());
+//   localStorage.setItem('selected-icon', currentIcon());
+// })
+var icon = document.getElementById("theme-button");
+icon.onclick = function(){
+  document.body.classList.toggle("dark-theme");
 }
-themeButton.addEventListener('click', () =>{
-  // add or remove the theme
-  document.body.classList.toggle(darkTheme);
-  document.body.classList.toggle(iconTheme);
-  // we also save the theme and the current icon that the user chose
-  localStorage.setItem('selected-theme', currentTheme());
-  localStorage.setItem('selected-icon', currentIcon());
-})
-
 /*------SCROLL REVEAL ANIMATION------*/

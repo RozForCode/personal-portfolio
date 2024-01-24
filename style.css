@@ -71,9 +71,9 @@ body {
   color: var(--text-color);
 }
 
-img {
+/* img {
   mix-blend-mode: multiply;
-}
+} */
 
 h1,
 h2,
@@ -113,7 +113,7 @@ img {
 }
 
 /*----VARIABLE DARK THEME-----*/
-.body.dark-theme {
+.dark-theme {
   --first-color: hsl(14, 98%, 50%);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
@@ -124,7 +124,9 @@ img {
   --body-color: hsl(0, 0%, 8%);
   --container-color: hsl(0, 0%, 12%);
 }
-
+.dark-theme .home__img,.dark-theme .about__img{
+  filter: brightness(0.9);
+}
 /*
    color changes in some parts of
    the screen in this mode
@@ -242,6 +244,7 @@ img {
 
 .nav__logo-circle {
   border-radius: 50%;
+  color:white;
 }
 
 .nav__toggle {
@@ -412,6 +415,7 @@ img {
 .home__arrow {
   position: absolute;
   width: 50px;
+  mix-blend-mode: multiply;
 }
 
 .home__arrow {
@@ -1075,3 +1079,4 @@ projects__link:hover i {
 .show-scroll {
   bottom: 3rem;
 }
+/* -------break-points-------- */
