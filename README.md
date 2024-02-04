@@ -28,7 +28,7 @@ Yet to be pushed on github
 Feel free to reach out to me for collaboration, job opportunities, or just to say hello!
 
 - **LinkedIn:** https://www.linkedin.com/in/navrose-singh-johal-4839a5278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-- **GitHub:** [[Your GitHub Profile]](https://github.com/RozForCode)
+- **GitHub:** https://github.com/RozForCode
 - **Portfolio Website:** https://rozforcode.github.io/personal-portfolio/
 
 ---
